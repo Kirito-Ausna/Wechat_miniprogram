@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/hot/hot",
+    "pages/broadcast/broadcast",
+    "pages/user/user",
+    "pages/hot/component/itemCard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/broadcast/broadcast",
+        "text": "精选电台",
+        "iconPath": "./data/电台.png",
+        "selectedIconPath": "./data/电台2.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热歌推荐",
+        "iconPath": "./data/hot.png",
+        "selectedIconPath": "./data/hot_selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "./data/个人.png",
+        "selectedIconPath": "./data/个人1.png"
+      }
+    ]
+  }
+}

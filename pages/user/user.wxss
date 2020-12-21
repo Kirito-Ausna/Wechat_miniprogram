@@ -1,0 +1,138 @@
+/* pages/user/user.wxss */
+page{background-color :  #ececec;}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rpx 0;
+  box-sizing: border-box;
+} 
+
+.myfavorate{
+  height: 128rpx;
+  width: 128rpx;
+  padding: 10rpx;
+}
+.mylist .mylove{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: black;
+}
+.mylist.comment{
+  display: flex;
+  align-items: center;
+  font-size: 16rpx;
+  color: #939599;
+  margin-top: 5rpx;
+}
+.content{
+  display: flex;
+  background-color: #ffffff;
+  margin:30rpx;
+  border: 2em;
+  border-radius: 10px;
+  padding: 10rpx 3vw 10rpx 3vw;
+  display: flex;
+  align-items: center;
+}
+.userinfo {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  position: 50% 50%;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border: 4rpx solid #aaa;
+  border-radius: 50%;
+  position: absolute;
+  left: 70rpx;
+}
+
+.userinfo-nickname {
+  color: white;
+  text-shadow: 0 0 6rpx black;
+  position: absolute;
+  left: 220rpx;
+
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.userinfo-header {
+  position: relative;
+  width: 100vw;
+  height: 42vw;
+  overflow: hidden;
+  text-align: center;
+}
+.userinfo-header-bg{
+  width: 100%;
+  height: 100vw;
+  margin-top: -25vw; 
+  filter: blur(10rpx);
+  align-content: flex-start;
+}
+.userinfo-colorfor{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+} 
+
+.option.data-v-6b3e0b03 {
+  position: relative;
+  top: -2vw;
+  padding: 0 120rpx;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  background-color: white;
+  font-size: 30rpx;
+  border-bottom: 2rpx solid #DCDFE6;
+  margin:30rpx;
+  border: 2em;
+  border-radius: 10px;
+}
+.recent.data-v-6b3e0b03 {
+  display: inline-block;
+  padding: 20rpx 0;
+  border-bottom: 4rpx solid  #1296db;
+  color: #1296db;
+}
+.recent2.data-v-6b3e0b03 {
+  display: inline-block;
+  padding: 20rpx 0;
+  color: black;
+}
+.collection.data-v-6b3e0b03 {
+  padding: 20rpx 0;
+  float: right;
+
+}
+.collection2.data-v-6b3e0b03 {
+  padding: 20rpx 0;
+  float: right;
+  border-bottom: 4rpx solid #1296db;
+  color: #1296db;
+}
+
+.songCard{
+  background-color: white;
+  margin:30rpx;
+  border: 2em;
+  border-radius: 10px;
+}

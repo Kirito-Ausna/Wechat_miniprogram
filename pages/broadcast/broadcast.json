@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "broadItem":"../../component/broadItem/broadItem"
+  }
+}

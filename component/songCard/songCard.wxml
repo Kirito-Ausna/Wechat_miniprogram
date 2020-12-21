@@ -1,0 +1,13 @@
+<!--component/songCard/songCard.wxml-->
+<!-- <text>component/songCard/songCard.wxml</text> -->
+
+<view class="card">
+  <image class="picture" src="{{item.src}}"></image>
+  <view class="song">
+    <view class="song name">{{item.songs}}</view>
+    
+    <view class="song author">{{item.author}}</view>
+    
+  </view>
+</view>
+<view class="divLine"></view>

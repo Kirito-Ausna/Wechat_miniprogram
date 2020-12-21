@@ -1,0 +1,36 @@
+/* component/songCard/songCard.wxss */
+
+.picture {
+  height: 100rpx;
+  width: 100rpx;
+  padding: 10rpx;
+}
+.name.song {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: black;
+  /* border-bottom: 2rpx solid #DCDFE6; */
+}
+.author.song {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  font-size: 16rpx;
+  color: #939599;
+  margin-top: 5rpx;
+  /* border-bottom: 2rpx solid #DCDFE6; */
+}
+/* 横着的分割View样式 */
+/*分割线样式*/
+.divLine{
+  background: #E0E3DA;
+  width: 100%;
+  height: 2rpx;
+}
+.card {
+  padding: 10rpx 3vw 10rpx 3vw;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+<!--pages/hot/hot.wxml-->
+<!-- <view>
+  <view class="author">{{name}}</view>
+  <view class="content">
+  <view class="song-list"> 
+    <view class="song" wx:for="{{songs}}" wx:key="{{index}}"
+    wx:for-item="song">
+      <text>{{song.id}} -- </text>
+      <text>{{song.title}}</text>
+    </view>
+  </view>
+    <view class="profile">
+      <image class="banner" mode="aspectFit" src="{{src}}"/>
+    </view>
+  </view>
+</view> -->
+<view style="padding-bottom: 20px"></view>
+<view class="music-hot">
+        <view wx:for="{{musics}}" wx:for-item="item" wx:for-index="index"
+        wx:key="index">
+            <itemCard item="{{item}}"/>
+        </view>
+</view>

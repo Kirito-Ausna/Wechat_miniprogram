@@ -1,0 +1,31 @@
+/* pages/hot/component/itemCard.wxss */
+.author{
+  font-weight: bold;
+  font-size: 40rpx;
+  background-color: #f5f5f5;
+  margin:20rpx;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.profile{
+  height: 250rpx;
+  width: 250rpx;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner{
+  width: 220rpx;
+  height: 220rpx;
+}
+.content{
+  display: flex;
+  background-color: #f5f5f5;
+  margin:30rpx;
+  border: 2em;
+  border-radius: 10px;
+}
+.song{
+  padding: 20rpx;
+}

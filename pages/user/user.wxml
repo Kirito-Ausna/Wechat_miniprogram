@@ -1,0 +1,43 @@
+<!--pages/user/user.wxml-->
+<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击获取头像昵称 </button>
+    <block wx:else>
+    <view class="userinfo-header">
+        <image class="userinfo-header-bg" src="{{src}}"></image>
+        <view class="userinfo-colorfor">
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+        </view>
+      </view>
+    </block>
+</view>
+
+<view class="content">
+   <image class="myfavorate"src="{{src}}"></image>
+   <view class="mylist">
+   <view class="mylist mylove">我喜欢的音乐</view>
+   <view class="mylist comment">469首，已下载16首</view>
+   </view>
+</view>
+
+<view class="_div data-v-6b3e0b03 songsbox">
+      <view class="_div data-v-6b3e0b03 option">
+        <view bindtap="recentSelected" ref="sss" class="_div data-v-6b3e0b03 {{style}}">创建歌单</view>
+        <view bindtap="collectionSelected" class="_div data-v-6b3e0b03 {{styleother}}">收藏歌单</view>
+        <view style="clear:both" class="_div data-v-6b3e0b03"></view>
+      </view>
+      <view hidden="{{flag ? true : false}}"> 
+        <view class="songCard">
+          <view wx:for="{{recents}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+            <songCard item="{{item}}"></songCard>
+          </view>
+        </view>
+      </view>
+      <view hidden="{{flag ? false : true}}"> 
+        <view class="songCard">
+          <view wx:for="{{collections}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+            <songCard item="{{item}}"></songCard>
+          </view>
+        </view>
+      </view> 
+  </view>

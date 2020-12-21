@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "songCard": "../../component/songCard/songCard"
+  }
+}
