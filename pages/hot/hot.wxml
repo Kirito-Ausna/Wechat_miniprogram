@@ -14,10 +14,14 @@
     </view>
   </view>
 </view> -->
-<view style="padding-bottom: 20px"></view>
+<view style="padding-bottom: 40rpx"></view>
 <view class="music-hot">
         <view wx:for="{{musics}}" wx:for-item="item" wx:for-index="index"
         wx:key="index">
             <itemCard item="{{item}}"/>
         </view>
+        <!-- <audio class="player" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}"
+        id="myAudio" controls loop></audio> -->
+        <!-- <musicPlayer song="{{song}}"/> -->
+        <musicPlayer/>
 </view>

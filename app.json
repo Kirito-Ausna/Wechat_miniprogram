@@ -3,7 +3,7 @@
     "pages/hot/hot",
     "pages/broadcast/broadcast",
     "pages/user/user",
-    "pages/hot/component/itemCard"
+    "pages/hotDetail/hotDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

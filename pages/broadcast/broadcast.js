@@ -7,7 +7,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-      broadcasts : []
+      broadcasts : [],
+      // song:{
+      //   poster:'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3427474780,1396133226&fm=26&gp=0.jpg',
+      //   name:'ふわふわ時間(#23『放課後!』Mix)',
+      //   author:'放課後ティータイム',
+      //   src:'http://m10.music.126.net/20201230215804/f344c468ba89015f7db5d76dbd1e0f8b/ymusic/a9c1/47f7/e72a/eeca0e403e1aa21dc60ca590be3db3f0.mp3',            
+      //   }
   },
 
   /**

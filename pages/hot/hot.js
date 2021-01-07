@@ -15,7 +15,13 @@ Page({
       //   {"id":2,"title":"说好不哭"},
       //   {"id":3,"title":"梯田"}
       // ]
-  },
+      // song:{
+      // poster:'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3427474780,1396133226&fm=26&gp=0.jpg',
+      // name:'ふわふわ時間(#23『放課後!』Mix)',
+      // author:'放課後ティータイム',
+      // src:'http://wychandsome12138.xyz:81/Friend.mp3',
+      // }
+    },
 
   /**
    * 生命周期函数--监听页面加载
@@ -30,14 +36,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+      // this.audioCtx = wx.createAudioContext('myAudio')
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    // console.log('song', this.data.song)
   },
 
   /**

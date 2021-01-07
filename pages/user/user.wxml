@@ -41,3 +41,7 @@
         </view>
       </view> 
   </view>
+  <view>
+  <!-- <musicPlayer song="{{song}}"/> -->
+  <musicPlayer/>
+  </view>

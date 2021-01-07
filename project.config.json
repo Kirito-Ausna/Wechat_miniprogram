@@ -28,15 +28,19 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": []
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
-  "appid": "wx2a81d86a2499c5fb",
+  "appid": "wx31a42cda393056f6",
   "projectname": "miniprogram-5",
   "debugOptions": {
     "hidedInDevtools": []
@@ -47,27 +51,21 @@
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "game": {
-      "current": -1,
       "list": []
     },
     "plugin": {
-      "current": -1,
       "list": []
     },
     "gamePlugin": {
-      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "current": -1,
       "list": []
     }
   }

@@ -19,7 +19,13 @@ Page({
     popnow: false,
     rcount: '',
     lcount: '',
-    "src" : "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=136295225,2820181088&fm=26&gp=0.jpg" 
+    "src" : "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=136295225,2820181088&fm=26&gp=0.jpg",
+    // song:{
+    //   poster:'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3427474780,1396133226&fm=26&gp=0.jpg',
+    //   name:'ふわふわ時間(#23『放課後!』Mix)',
+    //   author:'放課後ティータイム',
+    //   src:'http://wychandsome12138.xyz:81/Friend.mp3',
+    //   } 
   },
   //事件处理函数
   recentSelected: function(event){

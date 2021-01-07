@@ -30,3 +30,7 @@ page{background-color: lightblue;}
 .song{
   padding: 20rpx;
 } */
+/* .player{
+  position: fixed;
+  bottom: 0;
+} */

@@ -1,0 +1,19 @@
+<!--component/musicPlayer/musicPlayer.wxml-->
+<!-- <view class="player">
+      <audio poster="{{song.poster}}" name="{{song.name}}" author="{{song.author}}"
+      src="{{song.src}}" id="myAudio" controls loop>
+    </audio>
+</view> -->
+<!-- 第一个版本的组件 -->
+<view bindtap="handleClick" class="player">
+  <view class="p-left">
+    <image class="{{playState== 1?'music-pic playing':'music-pic paused' }}" src="{{musicPic}}" mode='aspectFit'></image>
+    <view class="music-info">
+      <text class="music-name">{{musicName}}</text>
+      <text class="music-artist">{{artistName}}</text>
+    </view>
+  </view>
+  <view class="p-right">
+    <image src="{{playState == 1?'../../image/pause.png' :'../../image/start.png'}}" mode='aspectFits'></image>
+  </view>
+</view>

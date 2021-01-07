@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "songCard": "../../component/songCard/songCard"
+    "songCard": "../../component/songCard/songCard",
+    "musicPlayer":"../../component/musicPlayer/musicPlayer"
   }
 }

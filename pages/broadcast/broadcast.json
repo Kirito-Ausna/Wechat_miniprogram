@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "broadItem":"../../component/broadItem/broadItem"
+    "broadItem":"../../component/broadItem/broadItem",
+    "musicPlayer":"../../component/musicPlayer/musicPlayer"
   }
 }

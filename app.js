@@ -1,4 +1,6 @@
 //app.js
+import {DEFAULT_MUSIC} from './config/index.js';
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -32,8 +34,16 @@ App({
         }
       }
     })
+    this.globalData.audio.src = DEFAULT_MUSIC.musicUrl
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    audio: wx.createInnerAudioContext(),
+    playState: DEFAULT_MUSIC.playState,
+    musicPic: DEFAULT_MUSIC.musicPic,
+    musicName: DEFAULT_MUSIC.musicName,
+    musicUrl: DEFAULT_MUSIC.musicUrl,
+    artistName: DEFAULT_MUSIC.artistName,
+    musicPlayer:null
   }
 })

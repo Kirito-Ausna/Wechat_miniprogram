@@ -7,3 +7,7 @@
     </view>
     <!-- <broadItem item="{{item}}"></broadItem> -->
 </view>
+<view>
+    <!-- <musicPlayer song="{{song}}"/> -->
+    <musicPlayer/>
+</view>

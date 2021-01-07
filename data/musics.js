@@ -2,7 +2,7 @@ var json = [
 	{
 		"id": 1,
 		"name": "吹响吧，上低音号",
-		"src": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2649846507,3401556258&fm=26&gp=0.jpg",
+		"src": "https://i0.hdslb.com/bfs/article/bb04b765abcbfcc6cf499184187cb798c505932c.jpg@1320w_1320h.webp",
 		"songs": [
 			{ "id": 1, "title": "Blast!" },
 			{ "id": 2, "title": "DREAM SOLISTER" },
@@ -12,7 +12,7 @@ var json = [
 	{
 		"id": 2,
 		"name": "三月的狮子",
-		"src": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3236560241,1843926260&fm=26&gp=0.jpg",
+		"src": "https://i0.hdslb.com/bfs/article/0da3eb6a410a1e35f438f0e8937193b189b9288f.jpg@1280w_1280h.webp",
 		"songs": [
 			{ "id": 1, "title": "BUMP OF CHICKEN" },
 			{ "id": 2, "title": "悲しみにさよなら" },

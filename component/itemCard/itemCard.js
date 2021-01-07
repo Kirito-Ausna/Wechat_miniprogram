@@ -21,6 +21,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+      handleHot: function(e){
+        wx.navigateTo({
+          // url: '../../pages/hotDetail/hotDetail',
+          url: `../../pages/hotDetail/hotDetail?singer=${this.data.item.name}&poster=${this.data.item.src}`,
+        })
+      }
   }
 })
