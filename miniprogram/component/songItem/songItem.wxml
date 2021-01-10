@@ -10,5 +10,5 @@
       {{singer}}
     </view>
   </view>
-  <!-- <image class='favor' catchtap="handleFavor" src="{{favor == true?'../../image/favor_true.svg':'../../image/favor_false.svg'}}"></image> -->
+  <image class='favor' catchtap="handleFavor" src="{{favor == true?'../../image/favor_true.svg':'../../image/favor_false.svg'}}"></image>
 </view>

@@ -87,7 +87,7 @@ Component({
         artistName: app.globalData.artistName,
         playState: app.globalData.playState
       })
-      console.log(this.data.musicName);
+      //console.log(this.data.musicName);
     }
   }
 })

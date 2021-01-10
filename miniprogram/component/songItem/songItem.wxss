@@ -37,8 +37,8 @@
   width: 100rpx;
   border-radius: 15rpx;
 }
-/* .favor{
+.favor{
   width: 50rpx;
   height: 50rpx;
   padding-right: 20rpx;
-} */
+}
