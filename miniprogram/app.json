@@ -3,7 +3,9 @@
     "pages/hot/hot",
     "pages/broadcast/broadcast",
     "pages/user/user",
-    "pages/hotDetail/hotDetail"
+    "pages/hotDetail/hotDetail",
+    "pages/broadcastDetail/broadcastDetail",
+    "pages/myfavor/myfavor"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -22,6 +22,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    HandleTap: function(e){
+      wx.navigateTo({
+        url: `../../pages/broadcastDetail/broadcastDetail?name=${this.data.item.name}&url=${this.data.item.thumb}`,
+      })
+    },
   }
 })

@@ -1,0 +1,57 @@
+/* miniprogram/pages/broadcastDetail/broadcastDetai.wxss */
+page {
+  height: 100%;
+}
+.music-detail {
+  padding-bottom: 110rpx;
+}
+.detail-banner {
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+  top: 0;
+  z-index: -1;
+}
+.detail-banner image {
+  width: 100%;
+  height: 100vw;
+  margin-top: -15vw; 
+}
+
+.detail-banner text{
+  color:white;
+  display: flex;
+  align-items: center;
+  z-index:1;
+  }
+
+.detail-wrap {
+  padding-top: 50rpx;
+}
+.broad-item{
+  width: 100%;
+  height: 500rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-size: 100% 100%;
+  position: relative;
+  }
+
+.broad-item text{
+  color:white;
+  display: flex;
+  align-items: center;
+  z-index:1;
+  }
+
+.broad-item::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .5);
+  z-index: 0;
+  }

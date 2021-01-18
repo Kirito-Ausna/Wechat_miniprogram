@@ -12,7 +12,7 @@
     </block>
 </view>
 
-<view class="content">
+<view class="content" bindtap="handleclick">
    <image class="myfavorate"src="{{src}}"></image>
    <view class="mylist">
    <view class="mylist mylove">我喜欢的音乐</view>

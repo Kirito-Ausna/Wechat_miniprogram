@@ -1,0 +1,13 @@
+<!--miniprogram/pages/broadcastDetail/broadcastDetai.wxml-->
+<!-- <text>miniprogram/pages/broadcastDetail/broadcastDetai.wxml</text> -->
+<view class='music-detail'>
+  <view class='broad-item' style="background-image:url('{{url}}');">
+    <text>{{name}}</text>
+  </view>
+  <view class='detail-wrap'>
+    <view wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index" wx:key="index">
+      <songItem item="{{item}}" singer="{{name}}"/>
+    </view>
+  </view>
+</view>
+<musicPlayer id="player"/>

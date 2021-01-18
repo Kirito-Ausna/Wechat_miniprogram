@@ -1,11 +1,11 @@
 var json = [
   {
     name:"ACG经典",
-    thumb:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4235824124,640991708&fm=26&gp=0.jpg"
+    thumb:"https://i0.hdslb.com/bfs/article/bb04b765abcbfcc6cf499184187cb798c505932c.jpg@1320w_1320h.webp"
   },
   {
     name:"日韩经典", 
-    thumb: "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=832061850,35256887&fm=26&gp=0.jpg"
+    thumb: "https://i0.hdslb.com/bfs/article/0da3eb6a410a1e35f438f0e8937193b189b9288f.jpg@1280w_1280h.webp"
   },
   {
     name:"温暖冬日",
@@ -21,7 +21,7 @@ var json = [
   },
   {
     name: "成名曲",
-    thumb:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1438695692,1582330192&fm=26&gp=0.jpg"
+    thumb:"https://i0.hdslb.com/bfs/article/bb04b765abcbfcc6cf499184187cb798c505932c.jpg@1320w_1320h.webp"
   }
 ]
 

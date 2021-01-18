@@ -87,5 +87,10 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  handleclick:function(e){
+    wx.navigateTo({
+      url: "../../pages/myfavor/myfavor"
+    })
   }
 })

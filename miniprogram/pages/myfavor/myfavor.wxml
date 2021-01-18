@@ -1,0 +1,13 @@
+<!--miniprogram/pages/myfavor/myfavor.wxml-->
+<!-- <text>miniprogram/pages/myfavor/myfavor.wxml</text> -->
+<view class='music-detail'>
+  <view class='detail-banner'>
+    <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3733469111,2466232689&fm=26&gp=0.jpg" mode="aspectFit"></image>
+  </view>
+  <view class='detail-wrap'>
+    <view wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index" wx:key="index">
+      <songItem item="{{item}}" singer="{{item.singer}}"/>
+    </view>
+  </view>
+</view>
+<musicPlayer id="player"/>

@@ -7,7 +7,12 @@ Component({
   properties: {
       item:{
         type:Object,
-        value:{}
+        value:{},
+        observer: function(val){
+          if(val){
+            this.Listen_item_property();
+          }
+        }
       },
       singer:{
         type:String,
@@ -24,23 +29,24 @@ Component({
   },
   
   pageLifetimes:{
-    show:function(){
-      let states = app.globalData.favorMusics;
-      console.log(states)
-      console.log(this.properties.singer)
-      let ASinger = this.properties.singer;
-      let index = this.properties.item.sid;
-      let Songname = this.properties.item.name;
-      console.log(index)
-      if(typeof(states[ASinger])!='undefined'){
-        if(typeof(states[ASinger][Songname]!='undefined')&&typeof(states[ASinger][index]!='undefined')){
-      this.setData({
-        favor:states[this.properties.singer][this.properties.item.name],
-        counterId:states[this.properties.singer][index]
-      })
-    }
-    }
-    }
+    // show:function(){
+    //   console.log(pageLifetimes);
+    //   let states = app.globalData.favorMusics;
+    //   console.log(states)
+    //   console.log(this.properties.singer)
+    //   let ASinger = this.properties.singer;
+    //   let index = this.properties.item.sid;
+    //   let Songname = this.properties.item.name;
+    //   console.log(index)
+    //   if(typeof(states[ASinger])!='undefined'){
+    //     if(typeof(states[ASinger][Songname]!='undefined')&&typeof(states[ASinger][index]!='undefined')){
+    //   this.setData({
+    //     favor:states[this.properties.singer][this.properties.item.name],
+    //     counterId:states[this.properties.singer][index]
+    //   })
+    // }
+    // }
+    // }
   },
   ready:function(){
     // console.log(this.properties.item,this.properties.singer)
@@ -94,6 +100,7 @@ Component({
           favor: true,
           name: this.properties.item.name,
           poster: this.properties.item.poster,
+          src: this.properties.item.src
         },
         success: res => {
         // 在返回结果中会包含新创建的记录的 _id
@@ -163,5 +170,24 @@ Component({
         })
       }
     },
+    Listen_item_property: function(){
+      var _this = this
+      console.log('pageLifetimes');
+      let states = app.globalData.favorMusics;
+      console.log(states)
+      console.log(_this.properties.singer)
+      let ASinger = _this.properties.singer;
+      let index = _this.properties.item.sid;
+      let Songname = _this.properties.item.name;
+      console.log(index)
+      if(typeof(states[ASinger])!='undefined'){
+        if(typeof(states[ASinger][Songname]!='undefined')&&typeof(states[ASinger][index]!='undefined')){
+      this.setData({
+        favor:states[_this.properties.singer][_this.properties.item.name],
+        counterId:states[_this.properties.singer][index]
+      })
+    }
+    }
+    }
   }
 })

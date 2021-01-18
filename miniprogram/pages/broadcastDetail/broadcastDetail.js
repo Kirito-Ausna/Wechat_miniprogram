@@ -1,6 +1,4 @@
-// const songList = require("../../data/songList.js");
-// pages/hotDetail/hotDetail.js
-// var songList = require("../../data/songList.js");
+// miniprogram/pages/broadcastDetail/broadcastDetai.js
 var app = getApp();
 Page({
 
@@ -8,10 +6,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-      singer:null,
-      poster:null,
-      dataSource:[]
+      name:null,
+      url:null,
+      dataSource:null
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -19,11 +18,12 @@ Page({
     var player = this.selectComponent("#player");
     // console.log(player);
     app.globalData.player = player;
-    const {singer,poster} = options;
-    console.log(singer, poster);
+    // console.log(app.globalData.player);
+    const {name,url} = options;
+    console.log(options);
     this.setData ({
-      singer: singer,
-      poster: poster,
+      name: name,
+      url: url,
     })
     const db = wx.cloud.database()
     db.collection('song_list').doc('0a3f93956001a4e801f7abaa3fe86d16').get({
@@ -33,27 +33,44 @@ Page({
           // songList['liRongHao'] = res.data.liRongHao;
           // songList['xuSong'] = res.data.xuSong;
           // songList['zhouJieLun'] = res.data.zhoujieLun;
-          switch (singer){
-            case "吹响吧，上低音号":
+          switch (name){
+            case "ACG经典":
               this.setData({
                 dataSource: res.data.zhoujieLun
               });
               console.log(this.data.dataSource);
               break;
-            case "三月的狮子":
+            case "日韩经典":
+              this.setData({
+                dataSource: res.data.zhoujieLun
+              });
+              console.log(this.data.dataSource);
+              break;
+            case "温暖冬日":
               this.setData({
                 dataSource: res.data.liRongHao
               });
               console.log(this.data.dataSource);
               break;
-            case "许嵩":
+            case "热歌":
+              this.setData({
+                dataSource: res.data.liRongHao
+              });
+              console.log(this.data.dataSource);
+              break;
+            case "KTV金曲":
+              this.setData({
+                dataSource: res.data.xuSong
+              });
+              console.log(this.data.dataSource);
+              break;
+            case "成名曲":
               this.setData({
                 dataSource: res.data.xuSong
               });
               console.log(this.data.dataSource);
               break;
           }
-          console.log(songList['xuSong']);
         },
         fail: err=>{
           wx.showToast({
@@ -69,7 +86,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-      // console.log(this.data.dataSource)
+
   },
 
   /**

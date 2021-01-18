@@ -64,7 +64,9 @@ App({
     }).get({
       success: res => {
         var favors = {}, favor_idx, favor
+        console.log(res.data)
         for (favor_idx in res.data){
+          console.log(favor_idx);
           favor = res.data[favor_idx] //一条数据
           console.log(favor)
           if(typeof(favors[favor.singer]) == "undefined"){
